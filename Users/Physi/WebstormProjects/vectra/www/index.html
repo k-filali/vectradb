@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Direction & Magnitude</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+
+<body>
+  <div>
+    <form id="mainForm">
+      <label for="openai">Your OpenAI API Key</label>
+      <input type="password" id="openai" name="openai">
+      <div>
+        <label for="inputText">Input Text:</label>
+        <textarea id="inputText" name="inputText"></textarea>
+      </div>
+      <div>
+        <label for="tags">Tags:</label>
+        <input type="text" id="tags" name="tags">
+      </div>
+    </form>
+    <button type="button" onclick="handleEmbed()">Embed</button>
+    <button type="button" onclick="handleSearch()">Search</button>
+  </div>
+  <div>
+    <button type="button" onclick="clearDatabase()">Clear Vectra</button>
+  </div>
+  <div>
+    <button type="button" onclick="embedAllFlatlands()">Embed Flatlands</button>
+  </div>
+  <script src="bootstrap.js"></script>
+</body>
+
+</html>
